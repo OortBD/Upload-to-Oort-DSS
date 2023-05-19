@@ -1,0 +1,6 @@
+Inputs
+path (required): The local path to the directory or file you want to upload.
+oortEndpoint (required): The URL of your Oort DSS S3-Compatible API endpoint (e.g., https://s3-standard.oortech.com).
+oortAccessKey (required): The access key for authenticating with Oort DSS.
+oortSecretKey (required): The secret key for authenticating with Oort DSS.
+oortBucket (required): The name of the Oort DSS bucket to upload the files to.
