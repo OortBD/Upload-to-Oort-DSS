@@ -1,0 +1,24 @@
+# Oort DSS Documentation
+
+Welcome to the Oort DSS documentation! This repository contains the official documentation for Oort DSS, a secure and scalable cloud-based data storage and management platform.
+
+To get started, please visit the [Oort DSS User Guide](https://docs.oortech.com/dss/getting-started/user-guide). The user guide provides step-by-step instructions on how to install, configure, and use Oort DSS for your data storage and management needs.
+
+## Table of Contents
+
+- [User Guide](https://docs.oortech.com/dss/getting-started/user-guide)
+- [S3-Compatible API Reference](https://docs.oortech.com/dss/developing-with-oort-dss/use-s3-compatible-api)
+- [GitHub Arcade Usage Example](https://arcade.standard.us-east-1.oortech.com/index.html)
+- [FAQs](https://docs.oortech.com/dss/faqs)
+
+## Contributing
+
+If you would like to contribute to the documentation or report any issues, please check out the [GitHub repository](https://github.com/oortech/docs) for the Oort DSS documentation. Your contributions are greatly appreciated!
+
+## Get Started with Oort DSS
+
+If you're new to Oort DSS, we recommend starting with the [User Guide](https://docs.oortech.com/dss/getting-started/user-guide). It provides detailed instructions and explanations on how to use Oort DSS effectively.
+
+If you have any questions or need further assistance, please don't hesitate to reach out to our support team at support@oortech.com.
+
+Happy exploring with Oort DSS!
