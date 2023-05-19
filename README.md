@@ -17,6 +17,35 @@ To get started with the GitHub integration for Oort DSS, follow these steps:
 3. Install the required dependencies by running `pip install -r requirements.txt`.
 4. Run the `upload_to_oort.py` script to upload files from your GitHub repository to Oort DSS.
 
+## Example Workflow
+name: Upload to Oort DSS
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+
+      - name: Build
+        run: |
+          # Build your project here
+
+      - name: Upload to Oort DSS
+        uses: actions/oort-dss-upload-action@v1
+        with:
+          path: ./build
+          oortEndpoint: 'https://s3-standard.oortech.com'
+          oortAccessKey: ${{ secrets.OORT_ACCESS_KEY }}
+          oortSecretKey: ${{ secrets.OORT_SECRET_KEY }}
+          oortBucket: 'my-bucket'
+
 ## Contributing
 
 Contributions are welcome! If you have any suggestions, bug reports, or feature requests, please open an issue or submit a pull request.
