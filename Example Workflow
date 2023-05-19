@@ -1,0 +1,32 @@
+name: Oort DSS Upload
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  upload:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+
+      - name: Build
+        run: |
+          # Build your project here
+
+      - name: Upload to Oort DSS
+        uses: actions/oort-dss-upload-action@v1
+        with:
+          path: .
+          oortEndpoint: 'https://s3-standard.oortech.com'
+          oortAccessKey: ${{ secrets.OORT_ACCESS_KEY }}
+          oortSecretKey: ${{ secrets.OORT_SECRET_KEY }}
+          oortBucket: 'my-bucket'
+
+      - name: Deploy to Production
+        run: |
+          # Add deployment steps here to deploy the uploaded files to production
+
